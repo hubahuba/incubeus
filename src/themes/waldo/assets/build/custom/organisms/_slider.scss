@@ -1,0 +1,40 @@
+.slider {
+	.item {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.carousel-control {
+		&.left,
+		&.right {
+			background: transparent;
+			opacity: 1;
+		}
+		[class^="wi-"] {
+			position: absolute;
+			top: 50%;
+			z-index: 5;
+			display: inline-block;
+			font-size: 36px;
+		}
+	}
+
+}
+
+
+/*=====================================
+=            MEDIA QUERIES            =
+=====================================*/
+
+@media (max-width: $screen-xs-max) {
+	
+	.slider {
+
+	}
+
+}
+
+/*-----  End of MEDIA QUERIES  ------*/
+
+

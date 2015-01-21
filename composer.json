@@ -1,0 +1,23 @@
+{
+    "name": "ngungut/incubeus",
+    "description": "",
+    "authors": [
+        {
+            "name": "Utomo Triputranto",
+            "email": "uut3aja@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Ngungut\\Incubeus\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

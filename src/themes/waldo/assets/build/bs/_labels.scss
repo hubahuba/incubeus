@@ -1,0 +1,8 @@
+.label {
+	&.round {
+		border-radius: 1000px;
+	}
+	&.hard {
+		border-radius: 0px;
+	}
+}

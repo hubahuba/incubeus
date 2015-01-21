@@ -1,0 +1,129 @@
+/*=================================
+=            POST LIST            =
+=================================*/
+
+.post-list {
+	margin-bottom: 30px;
+	padding: 20px 15px;
+	@include yiq-contrasted(#fcfcfc);
+	.post-list-title {
+		h1,h2,h3,h4,h5,h6,p {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		hr {
+			margin-top: 10px;
+		}
+	}
+	.post-list-button {
+		.btn {
+			[class^="wi-"] {
+				font-size: 12px;
+			}
+		}
+	}
+	.post-list-image {
+		margin-bottom: 20px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/*-----  End of POST LIST  ------*/
+
+
+
+/*===================================
+=            POST DETAIL            =
+===================================*/
+
+.post-detail-container {
+
+}
+.post-detail {
+	margin-bottom: 30px;
+	padding: 20px 15px;
+	@include yiq-contrasted(#fcfcfc);
+	.post-detail-title {
+		h1,h2,h3,h4,h5,h6,p {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		hr {
+			margin-top: 10px;
+		}
+	}
+	.post-detail-button {
+		.btn {
+			[class^="wi-"] {
+				font-size: 12px;
+			}
+		}
+	}
+	.post-detail-image {
+		margin-bottom: 20px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/*-----  End of POST DETAIL  ------*/
+
+
+/*================================
+=            COMMENTS            =
+================================*/
+
+.comment-container {
+	width: 100%;
+	&.in-comment-container {
+		width: 95%;
+		float: right;
+		margin-top: 10px;
+	}
+	.comment-list {
+		@include yiq-contrasted(#f9f9f9);
+		padding: 15px;
+		display: table;
+		vertical-align: top;
+		.comment-photo {
+			display: table-cell;
+			vertical-align: top;
+		}
+		.comment-content {
+			display: table-cell;
+			vertical-align: top;
+			padding: 0 10px;
+			p {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			hr {
+				margin: 10px 0;
+			}
+		}
+	}
+	.comment-interaction {
+		@include yiq-contrasted(#f9f9f9);
+		padding: 0 15px;
+		display: block;
+		width: 100%;
+		text-align: right;
+		ul {
+			margin-bottom: 0;
+			li {
+				font-size: 18px;
+				a {
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----  End of COMMENTS  ------*/
+

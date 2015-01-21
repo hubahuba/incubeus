@@ -1,0 +1,193 @@
+header {
+	@include yiq-contrasted(#fff);
+	text-align: center;
+	@include clearfix();
+
+	.header-top {
+		padding: 10px 20px;
+	}
+	// end header-top
+	.header-middle {
+		display: table;
+		vertical-align: middle;
+		.inheader-middle {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	// end header-middle
+
+	.header-profile {
+		a {
+			&:hover,
+			&:visited,
+			&:focus {
+				text-decoration: none;
+			}
+		}
+		.wi-user-f,
+		.wi-user {
+			font-size: 26px;
+		}
+	}
+	// end header-profile
+
+	.header-divider {
+		width: 20px;
+		font-size: 18px;
+	}
+
+	.header-cart {
+		display: table;
+		vertical-align: middle;
+		position: relative;
+		a {
+			color: $quaternary-color;
+			&:hover,
+			&:visited,
+			&:focus {
+				text-decoration: none;
+			}
+		}
+		.cart-desc {
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+			.wi-cart-f,
+			.wi-cart {
+				font-size: 26px;
+			}
+			.cart-count {
+				position: absolute;
+				top: 0;
+				right: -5px;
+			}
+		}
+	}
+	// end header-cart
+
+	.logo {
+		&.replacement {
+			@include yiq-contrasted($primary-color);
+			padding: 20px 50px;
+		}
+	}
+	// end logo
+
+	.socmed {
+		display: block;
+		width: 100%;
+		ul {
+			margin-bottom: 0;
+			margin-top: 5px;
+		}
+		li {
+			display: inline-block;
+			width: 30px;
+			font-size: 16px;
+			a {
+				cursor: pointer;
+				width: 30px;
+				height: 30px;
+				color: darken($primary-color, 10%);
+				&:hover {
+					color: darken($primary-color, 20%);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	// end socmed
+
+	nav.global {
+		margin-left: 10px;
+		a {
+			color: $quaternary-color;
+			margin: 0 10px;
+			font-weight: 700;
+			&:hover {
+				text-decoration: none;
+				border-bottom: solid 2px $primary-color;
+			}
+			&.highlight {
+				border: solid 2px $primary-color;
+				padding: 5px 10px;
+			}
+		}
+	}
+	// main navigation
+
+}
+// end header
+
+
+
+
+/*=====================================
+=            MEDIA QUERIES            =
+=====================================*/
+
+
+@media (max-width: $screen-xs-max) {
+  header {
+  	.header-middle {
+  		display: block;
+  		width: 100%;
+  		.inheader-middle {
+				display: block;
+				width: 100%;
+  		}
+  	}
+  	end header-middle
+
+  	nav.global {
+  		padding: 20px 10px;
+  	}
+  	// end nav global
+
+  	.socmed-wrapper {
+  		width: 100%;
+  		text-align: center;
+  	}
+  	// end socmed wrapper
+
+		.nav-mobile-trigger {
+			padding: 10px;
+			display: block;
+			&:hover,
+			&:focus,
+			&:visited {
+				text-decoration: none;
+			}
+			[class^="wi-"] {
+				font-size: 16px;
+			}
+		}
+		.nav-mobile {
+			li {
+				a {
+					display: block;
+					padding: 10px 5px;
+					@include yiq-contrasted(#f8f8f8);
+					&.highlight {
+						@include yiq-contrasted($primary-color);
+					}
+				}
+				border-bottom: solid 1px #ddd;
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+			a:hover,
+			a:focus,
+			a:visited {
+				text-decoration: none;
+			}
+		}
+  	// end nav-mobile
+  }
+}
+
+
+/*-----  End of MEDIA QUERIES  ------*/
+

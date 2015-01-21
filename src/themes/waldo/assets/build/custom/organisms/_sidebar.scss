@@ -1,0 +1,18 @@
+.sidebar-widget {
+	@include yiq-contrasted(#fcfcfc);
+	padding: 20px 15px;
+	margin-bottom: 20px;
+	.sidebar-widget-title {
+		hr {
+			margin: 10px 0;
+		}
+	}
+	.sidebar-widget-content {
+
+		// archives
+		.archives {
+			margin-bottom: 0;
+		}
+
+	}
+}

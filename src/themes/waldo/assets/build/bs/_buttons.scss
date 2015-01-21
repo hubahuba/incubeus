@@ -1,0 +1,39 @@
+$btn-border-radius-normal: 4px;
+$btn-border-radius-round: 1000px;
+
+$btn-primary-transition: border 500ms ease-out;
+$btn-primary-hover-border-color: lighten($brand-primary, 5%);
+$btn-primary-focus-border-color: $btn-primary-hover-border-color;
+$btn-primary-active-border-color: darken($brand-primary, 5%);
+
+.btn {
+	// default border-radius
+	border-radius: 0px;
+	&.radius {
+		border-radius: $btn-border-radius-normal;
+	}
+	&.round {
+		border-radius: $btn-border-radius-round;
+	}
+	&.btn-primary {
+		border-width: 3px;
+		transition : $btn-primary-transition;
+		&:hover {
+			border-color: $btn-primary-hover-border-color;
+		}
+		&:focus,
+		&.focus {
+			border-color: $btn-primary-focus-border-color;
+			outline: none;
+		}
+		&:active,
+		&.active {
+			border-color: $btn-primary-active-border-color;
+			box-shadow: none;
+			&:focus,
+			&.focus {
+				outline: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.panel {
+	// default no border-radius
+	border-radius: 0px;
+	.panel-heading,
+	.panel-body {
+		border-radius: 0px;
+	}
+
+	&.radius {
+		border-radius: $border-radius-default + 1px;
+		.panel-heading {
+			border-top-right-radius: $border-radius-default;
+			border-top-left-radius: $border-radius-default;
+		}
+		.panel-body {
+			border-top-right-radius: $border-radius-default;
+			border-top-left-radius: $border-radius-default;
+		}
+		&.radius-large {
+			border-radius: $border-radius-large + 1px;
+			.panel-heading {
+				border-top-right-radius: $border-radius-large;
+				border-top-left-radius: $border-radius-large;
+			}
+			.panel-body {
+				border-top-right-radius: $border-radius-large;
+				border-top-left-radius: $border-radius-large;
+			}
+		}
+		&.radius-extra-large {
+			border-radius: $border-radius-extra-large + 1px;
+			.panel-heading {
+				border-top-right-radius: $border-radius-extra-large;
+				border-top-left-radius: $border-radius-extra-large;
+			}
+			.panel-body {
+				border-top-right-radius: $border-radius-extra-large;
+				border-top-left-radius: $border-radius-extra-large;
+			}
+		}
+	}
+	&.panel-secondary {
+		@include yiq-contrasted($secondary-color);
+	}
+	&.panel-tertiary {
+		@include yiq-contrasted($tertiary-color);
+	}
+	&.panel-quaternary {
+		@include yiq-contrasted($quaternary-color);
+	}
+	&.panel-quinary {
+		@include yiq-contrasted($quinary-color);
+	}
+}

@@ -1,0 +1,33 @@
+.pagination {
+	border-radius: 0;
+	li {
+		a {
+			background: transparent;
+			color: #000;
+			&:hover {
+				background: transparent;
+			}
+		}
+		&:first-child,
+		&:last-child {
+			a {
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+.post-list-container {
+	.pager {
+		margin-top: 0;
+		li {
+			> a {
+				&:hover,
+				&:focus {
+					@include yiq-contrasted(darken($primary-color, 10%));
+					border-color: darken($brand-primary, 5%);
+				}
+			}
+		}
+	}
+}

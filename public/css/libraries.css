@@ -1,0 +1,7 @@
+.image-choose{
+    position:fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 1090;
+    min-width: 300px;
+}
